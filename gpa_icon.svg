@@ -1,0 +1,37 @@
+<svg width="100%" viewBox="0 0 680 690" xmlns="http://www.w3.org/2000/svg">
+  
+
+  <!-- Black background with rounded corners -->
+  <rect width="680" height="680" fill="#0d0d0f" rx="120" style="fill:rgb(13, 13, 15);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Subtle grid -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(200,245,96,0.06)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="680" height="680" fill="url(#grid)" rx="120" style="stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Graduation cap - brim (rectangle) -->
+  <rect x="170" y="290" width="340" height="40" fill="#c8f560" rx="6" style="fill:rgb(200, 245, 96);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Graduation cap - top (diamond shape) -->
+  <polygon points="340,160 510,270 340,290 170,270" fill="#c8f560" style="fill:rgb(200, 245, 96);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Tassel string -->
+  <line x1="510" y1="270" x2="510" y2="380" stroke="#c8f560" stroke-width="8" stroke-linecap="round" style="fill:rgb(0, 0, 0);stroke:rgb(200, 245, 96);color:rgb(255, 255, 255);stroke-width:8px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Tassel ball -->
+  <circle cx="510" cy="395" r="18" fill="#c8f560" style="fill:rgb(200, 245, 96);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Tassel fringe lines -->
+  <line x1="498" y1="413" x2="490" y2="445" stroke="#c8f560" stroke-width="4" stroke-linecap="round" style="fill:rgb(0, 0, 0);stroke:rgb(200, 245, 96);color:rgb(255, 255, 255);stroke-width:4px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="510" y1="413" x2="510" y2="448" stroke="#c8f560" stroke-width="4" stroke-linecap="round" style="fill:rgb(0, 0, 0);stroke:rgb(200, 245, 96);color:rgb(255, 255, 255);stroke-width:4px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="522" y1="413" x2="530" y2="445" stroke="#c8f560" stroke-width="4" stroke-linecap="round" style="fill:rgb(0, 0, 0);stroke:rgb(200, 245, 96);color:rgb(255, 255, 255);stroke-width:4px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- GPA text below cap -->
+  <text x="340" y="560" text-anchor="middle" font-family="Georgia, serif" font-size="80" font-weight="bold" fill="#c8f560" style="fill:rgb(200, 245, 96);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Georgia, serif;font-size:80px;font-weight:700;text-anchor:middle;dominant-baseline:auto">GPA</text>
+
+  <!-- Thin accent underline -->
+  <rect x="220" y="578" width="240" height="4" fill="#c8f560" rx="2" opacity="0.5" style="fill:rgb(200, 245, 96);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+</svg>

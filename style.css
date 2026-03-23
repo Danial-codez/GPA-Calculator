@@ -197,7 +197,7 @@ header h1 span {
  
 .result-card.glow {
   border-color: var(--accent);
-  box-shadow: 0 0 40px rgba(200, 245, 96, 0.08);
+  box-shadow: 0 0 40px rgba(200, 245, 96, 0.5);
 }
  
 .result-label {
