@@ -285,14 +285,9 @@ footer {
   color: #ff5c5c;
 }
 
-.footer-visits {
+.footer-right {
   font-size: 0.85rem;
   color: var(--muted);
-}
-
-#visit-count {
-  color: var(--accent);
-  font-weight: 600;
 }
  
 /* Responsive */
