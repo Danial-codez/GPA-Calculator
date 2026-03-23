@@ -117,7 +117,7 @@ function calculateGPA() {
   resultCard.classList.add("glow");
  
   // Label
-  const labelObj = GPA_LABELS.find(l => gpa >= l.min) || GPA_LABELS[GPA_LABELS.length - 1];
+  const labelObj = GPA_LABELS.find(l => gpa >= l.min);
   gpaTag.textContent = labelObj.label;
   gpaDisplay.style.color = labelObj.color;
 }
@@ -158,8 +158,14 @@ addBtn.addEventListener("click", () => addCourse());
 calcBtn.addEventListener("click", calculateGPA);
 resetBtn.addEventListener("click", reset);
  
+fetch("https://api.countapi.xyz/hit/your-site-name/visits")
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("visit-count").textContent = data.value;
+  });
+
 // Init with 3 default rows
-addCourse("Introduction to CS", "3", "A");
-addCourse("Calculus I", "3", "B+");
-addCourse("English Composition", "2", "A-");
+addCourse("Programming Fundamentals", "3", "A");
+addCourse("Calculus ", "3", "B+");
+addCourse("Applied Physics", "3", "A-");
  
