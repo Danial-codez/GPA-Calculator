@@ -158,7 +158,7 @@ addBtn.addEventListener("click", () => addCourse());
 calcBtn.addEventListener("click", calculateGPA);
 resetBtn.addEventListener("click", reset);
  
-fetch("https://api.countapi.xyz/hit/danial-gpa-calc/visits")
+fetch("https://api.counterapi.dev/v1/danial-gpa-calc/visits/hit")
   .then(res => res.json())
   .then(data => {
     document.getElementById("visit-count").textContent = data.value;
