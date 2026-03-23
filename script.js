@@ -158,10 +158,13 @@ addBtn.addEventListener("click", () => addCourse());
 calcBtn.addEventListener("click", calculateGPA);
 resetBtn.addEventListener("click", reset);
  
-fetch("https://api.countapi.xyz/hit/your-site-name/visits")
+fetch("https://api.countapi.xyz/hit/danial-gpa-calc/visits")
   .then(res => res.json())
   .then(data => {
     document.getElementById("visit-count").textContent = data.value;
+  })
+  .catch(() => {
+    document.getElementById("visit-count").textContent = "N/A";
   });
 
 // Init with 3 default rows

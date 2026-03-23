@@ -1,52 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OWN YOUR AVERAGE</title>
-  <link rel="shortcut icon" href="gpa_icon.svg" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OWN YOUR AVERAGE</title>
+    <link rel="shortcut icon" href="gpa_icon.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>GPA <span>Calculator</span></h1>
+        <p class="subtitle">Track your grades, own your average.</p>
+      </header>
 
-  <div class="bg-grid"></div>
+      <div class="card">
+        <div class="table-header">
+          <span>Course Name</span>
+          <span>Credits</span>
+          <span>Grade</span>
+          <span></span>
+        </div>
 
-  <div class="container">
-    <header>
-      <h1>GPA <span>Calculator</span></h1>
-      <p class="subtitle">Track your grades, own your average.</p>
-    </header>
+        <div id="course-list"></div>
 
-    <div class="card">
-      <div class="table-header">
-        <span>Course Name</span>
-        <span>Credits</span>
-        <span>Grade</span>
-        <span></span>
+        <button class="add-btn" id="add-btn">+ Add Course</button>
       </div>
 
-      <div id="course-list"></div>
+      <div class="result-card" id="result-card">
+        <div class="result-label">Your GPA</div>
+        <div class="result-value" id="gpa-display">—</div>
+        <div class="result-tag" id="gpa-tag"></div>
+      </div>
 
-      <button class="add-btn" id="add-btn">+ Add Course</button>
+      <div class="actions">
+        <button class="calc-btn" id="calc-btn">Calculate GPA</button>
+        <button class="reset-btn" id="reset-btn">Reset</button>
+      </div>
+      <div class="down">
+        <footer>
+          <p class="footer-made">
+            Made with <span class="heart">♥</span> by Danial
+          </p>
+          <p class="footer-visits">
+            👁 Total Visits: <span id="visit-count">...</span>
+          </p>
+        </footer>
+      </div>
     </div>
 
-    <div class="result-card" id="result-card">
-      <div class="result-label">Your GPA</div>
-      <div class="result-value" id="gpa-display">—</div>
-      <div class="result-tag" id="gpa-tag"></div>
-    </div>
-
-    <div class="actions">
-      <button class="calc-btn" id="calc-btn">Calculate GPA</button>
-      <button class="reset-btn" id="reset-btn">Reset</button>
-    </div>
-  </div>
-<footer>
-  <p>Made with <span>♥</span> by Danial</p>
-  <p class="visit-count">👁 Visits: <span id="visit-count">...</span></p>
-</footer>
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -30,22 +30,9 @@ body {
   overflow-x: hidden;
 }
  
-.bg-grid {
-  position: fixed;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(200, 245, 96, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(200, 245, 96, 0.03) 1px, transparent 1px);
-  background-size: 40px 40px;
-  pointer-events: none;
-  z-index: 0;
-}
- 
 .container {
   width: 100%;
   max-width: 680px;
-  position: relative;
-  z-index: 1;
   animation: fadeUp 0.5s ease both;
 }
  
@@ -276,6 +263,37 @@ header h1 span {
   border-color: var(--danger);
   color: var(--danger);
 }
+
+footer {
+  margin-top: 32px;
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-made {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.heart {
+  color: #ff5c5c;
+}
+
+.footer-visits {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+#visit-count {
+  color: var(--accent);
+  font-weight: 600;
+}
  
 /* Responsive */
 @media (max-width: 480px) {
@@ -286,4 +304,10 @@ header h1 span {
     gap: 6px;
   }
   .result-value { font-size: 3.8rem; }
+   footer {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    padding: 16px;
+  }
 }
