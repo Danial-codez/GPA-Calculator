@@ -158,6 +158,30 @@ addBtn.addEventListener("click", () => addCourse());
 calcBtn.addEventListener("click", calculateGPA);
 resetBtn.addEventListener("click", reset);
 
+const BIN_ID = "69c1abe0b7ec241ddc975ebf";
+const API_KEY = "$2a$10$XoAlB3H92.8ihEHO.XbZYuR4t71OtbZXUwXGjfQhKF44bmZ2VZZu.";
+
+fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}`, {
+  headers: { "X-Master-Key": API_KEY }
+})
+  .then(res => res.json())
+  .then(data => {
+    const newCount = data.record.visits + 1;
+    document.getElementById("visit-count").textContent = newCount;
+
+    return fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+        "X-Master-Key": API_KEY
+      },
+      body: JSON.stringify({ visits: newCount })
+    });
+  })
+  .catch(() => {
+    document.getElementById("visit-count").textContent = "N/A";
+  });
+
 // Init with 3 default rows
 addCourse("Programming Fundamentals", "3", "A");
 addCourse("Calculus ", "3", "B+");
