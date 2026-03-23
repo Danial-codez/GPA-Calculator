@@ -158,12 +158,16 @@ addBtn.addEventListener("click", () => addCourse());
 calcBtn.addEventListener("click", calculateGPA);
 resetBtn.addEventListener("click", reset);
  
+console.log("fetch starting...");
+
 fetch("https://api.counterapi.dev/v1/danial-gpa-calc/visits/hit")
   .then(res => res.json())
   .then(data => {
+    console.log("data received:", data);
     document.getElementById("visit-count").textContent = data.value;
   })
-  .catch(() => {
+  .catch((err) => {
+    console.log("error:", err);
     document.getElementById("visit-count").textContent = "N/A";
   });
 
